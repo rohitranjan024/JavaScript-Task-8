@@ -1,0 +1,35 @@
+#train {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(50%);
+    width: 300px;
+    height: 150px;
+    background-image: url('./train.png');
+    background-size: cover;
+    animation-name: moveTrain;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .box{
+      width: 35%;
+      padding: 100px;
+      margin: 0 auto;
+  }
+
+  .box h2{
+      color: indigo;
+  }
+
+  .btn{
+      width: 20%;
+      margin-left: 216px;
+  }
+
+  @keyframes moveTrain {
+    from { left: 0px; }
+    to { left: calc(80% - 300px); }
+  }
